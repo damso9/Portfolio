@@ -18,13 +18,17 @@
   --space-max-width: 111rem;
   --transition: 300ms ease-in-out;
 }
+body {
+  background-color: var(--color-very-light-gray);
+  font-family: var(--font-family-sans);
+  
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 nav {
-  border: 2px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,9 +41,18 @@ ul li {
 #toggle-nav {
   display: none;
 }
+#toggle-nav li a{
+  color: var(--color-grayish-dark-blue);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: var(--weight-semiBold);
+}
+#toggle-nav li a:hover {
+  color:var(--color-cyan);
+
+}
 .nav-icon {
   font-size: 1.4em;
-  border: 2px solid red;
   align-self: center;
 }
 #logo-icon {
@@ -49,7 +62,7 @@ ul li {
 main {
   width: 90%;
   margin: 0 auto;
-  border: 2px solid red;
+
 }
 .homepage-section1 img{
   width: 100%;
@@ -61,8 +74,15 @@ main {
 .mobile-desktop {
   display:none
 }
+.mobile-desktop button:hover {
+  background: var(--color-cyan);
+  transition: var(--transition);
+  
+}
 .mobile h1 {
   padding: 20px 0;
+  font-family: var(--font-family-serif);
+  font-size: 2.7em;
 }
 .mobile button {
   background-color: var(--color-dark-blue);
@@ -79,14 +99,13 @@ main {
   width: auto;
 }
 .about-me {
-  border: 2px solid red;
   padding: 20px 20px;
-  color: var(--color-cyan);
+  color: var(--color-light-gray);
 
   /* height: 100%; */
 }
 .about-me-text {
-  border: 2px solid red;
+
   padding: 20px 20px;
 }
 .homepage-section2 {
@@ -97,7 +116,7 @@ main {
 
   margin-top: 50px;
   margin-bottom: 30px;
-  border: 2px solid blue;
+
 }
 .homepage-section2 img {
   width: 100%;
@@ -107,11 +126,10 @@ main {
   background-image: url("/dami-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 2px solid red;
+
 }
 
 .homepage-section3 {
-  border: 2px solid red;
 }
 .homepage-section3 h2 {
   color: var(--color-grayish-dark-blue);
@@ -119,35 +137,71 @@ main {
   font-size: 2em;
 }
 .homepage-section3 p {
-  border: 2px solid red;
   font-size: 1.1em;
   line-height: 1.6;
+  color: gray;
 }
 .goto-portfolio {
-  border: 2px solid red;
+  border: 2px solid var(--color-dark-blue);
   padding: 20px 40px;
   margin: 20px 0;
   margin-bottom: 50px;
+  font-weight: 700;
+  background-color: var(--color-very-light-gray);
+  color: var(--color-dark-blue);
+  letter-spacing: 4px;
+  transition: var(--transition);
+}
+.goto-portfolio:hover {
+  background-color: var(--color-dark-blue);
+  color: var(--color-very-light-gray);
+
 }
 .homepage-section4 {
-  border: 2px solid red;
   margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 30px;
 }
 .homepage-section4 h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
+  padding: 20px 0;
+  font-family: var(--font-family-serif);
+
 }
-.homepage-section4 button {
+/* .homepage-section4 button {
   border: 2px solid red;
   padding: 20px 40px;
   margin: 20px auto;
   margin-bottom: 50px;
   display: block;
+} */
+.homepage-section4 button {
+  border: 2px solid var(--color-dark-blue);
+  font-weight: 700;
+  background-color: var(--color-very-light-gray);
+  color: var(--color-dark-blue);
+  letter-spacing: 4px;
+  transition: var(--transition);
+  padding: 20px 10px;
+  width: 50%;
+  margin: 0 auto;
+
+
+
+}
+.homepage-section4 button:hover {
+  background-color: var(--color-dark-blue);
+  color: var(--color-very-light-gray);
+
 }
 footer {
   background-color: var(--color-grayish-dark-blue);
   color: var(--color-border-gray);
   text-align: center;
+  padding-bottom: 30px;
 }
 #footer-icon {
   color: white;
@@ -160,29 +214,41 @@ footer {
 footer .list1 li {
   display: block;
   padding: 14px 0;
+  margin: 10px 0;
+}
+footer .list1 li a {
+  color: var(--color-light-gray);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+
+}
+footer .list1 li a:hover {
+  color: var(--color-cyan);
 }
 footer .list2 li {
   display: inline;
   margin: 0 10px;
   font-size: 2em;
+  cursor: pointer;
+}
+footer .list2 li:hover {
+  color: var(--color-cyan);
 }
 .project {
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
   width: 100%;
 }
 .project-image {
   width: 100%;
   height: 18.3em;
-  border: 2px solid red;
   background-image: url("https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/portfolio/tablet/image-portfolio-manage@2x.jpg");
   background-repeat: no-repeat;
   background-size: auto;
 }
 .project-info {
   margin: 40px 0;
-  border: 2px solid red;
 }
 .project-info h2 {
   padding: 20px 0;
@@ -192,10 +258,73 @@ footer .list2 li {
   line-height: 1.8;
 }
 .project-info button {
-  border: 2px solid red;
   padding: 20px 40px;
   margin: 20px 0;
   margin-bottom: 50px;
+}
+.contact-section1 {
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+.contact-section1 div {
+
+}
+.contact-section1 div h2 {
+  padding: 20px 0;
+}
+.get-in-touch {
+
+  padding: 10px 0;
+
+}
+.get-in-touch li {
+  display: inline;
+
+  font-size: 1.7em;
+  margin-right: 10px;
+}
+
+#name, #email-address, #message {
+
+  display: block;
+  width: 100%;
+  padding: 1.2em 0.6em;
+  background-color: var(--color-form-input-bg);
+  height: 1.9em;
+  outline: none;
+  border: 1px solid transparent;
+  margin:7px 0 15px 0;
+}
+#message {
+  resize: none;
+  height: 100px;
+  margin-bottom: 23px;
+
+}
+label {
+  font-weight: 600;
+}
+ #message:focus, #name:focus, #email-address:focus {
+  border-color: green;
+}
+#submit-btn {
+  background-color: var(--color-grayish-dark-blue);
+  color: var(--color-very-light-gray);
+  padding: 18px 30px;
+  outline: none;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+#submit-btn:hover{
+  background-color: var(--color-very-light-gray);
+  color: var(--color-grayish-dark-blue);
+  border: 1px solid var(--color-grayish-dark-blue);
+}
+.contact-section2 {
+  padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -204,12 +333,12 @@ footer .list2 li {
   }
   #toggle-nav {
     display: flex;
-    border: 2px solid red;
+
     justify-content: space-between;
   }
   #toggle-nav li {
     margin: 0 20px;
-    border: 2px solid red;
+ 
   }
   .project {
     flex-direction: row;
@@ -238,7 +367,10 @@ footer .list2 li {
     justify-content: space-between;
     align-items: center;
   }
-  .list1 li {
+  #footer-icon {
+    margin-right: 30px;
+  }
+  .list1 li a {
     margin: 0 20px;
   }
   .mobile {
@@ -246,7 +378,7 @@ footer .list2 li {
   }
   .homepage-section1 {
     position: relative;
-    border: 2px solid green;
+
   }
   .homepage-section1  img {
     width: 100%;
@@ -256,16 +388,16 @@ footer .list2 li {
     background-image: url("https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/homepage/mobile/image-homepage-hero@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid blue;
+
   }
   .mobile-desktop {
     display:block;
     position: absolute;
-    border: 2px solid rgb(27, 24, 24);
     background: var(--color-light-gray);
     bottom: 0%;
-    width: 55%;
+    width: 48%;
     left: 0;
+    font-family: var(--font-family-serif)
   }
   .mobile-desktop h1 {
     padding: 20px 0;
@@ -289,7 +421,7 @@ footer .list2 li {
   article {
     margin-top: 50px;
     display: flex;
-    border: 2px solid green;
+  
     flex-direction: center;
    
     width: 100%;
@@ -307,19 +439,39 @@ footer .list2 li {
     padding: 30px;
     position: relative;
   }
+  .about-center {
+    width: 60%;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  .about-center p {
+    line-height: 1.9;
+  }
+  #about-top {
+    height: 1px;
+    width: 525px;
+    color: blue;
+    position: absolute;
+    top: 0;
+    background:rgb(27, 24, 24)
+  }
+  #about-bottom {
+    height: 1px;
+    width: 525px;
+    color: blue;
+    position: absolute;
+    bottom: 0;
+    background:rgb(27, 24, 24)
+  }
   .homepage-section3 h2{
     padding-top: 60px;
     font-size: 3.0em;
+    font-family: var(--font-family-serif);
   }
   .goto-portfolio {
     margin-top: 50px;
   }
 
-  hr {
-    color: blue;
-    position: absolute;
-    bottom: 0;
-  }
   .homepage-section4 {
     display: flex;
     width: 100%;
@@ -328,14 +480,51 @@ footer .list2 li {
     align-items: center;
   }
   .homepage-section4 h2 {
-    text-align: left;
     width: 350px;
     font-size: 2.6em;
-    border: 2px solid red;
   }
+  
   .homepage-section4 button {
-    border: 2px solid red;
+    border: 2px solid var(--color-cyan);
     margin: 0;
-    padding: 10px 20px;
+    padding: 20px 10px;
+    width: 25%;
+
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .contact-section1 {
+    flex-direction: row;
+    width: 100%;
+    padding-top: 50px;
+    border-top: 1px solid var(--color-border-gray);
+    margin-top: 40px;
+    border-bottom: 1px solid var(--color-border-gray);
+  }
+  .contact-section1-part1 {
+    width: 45%;
+  }
+  .contact-section1-part2 {
+    width: 100%;
+  }
+  .contact-section1-part2 p {
+    line-height: 1.9;
+  }
+  .contact-section1 div h2 {
+    padding: 0; 
+  }
+  .contact-section2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 60px;
+  
+  }
+  .contact1 {
+    width: 45%;
+ 
+  }
+  .contact2 {
+    width: 100%;
   }
 }

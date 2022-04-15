@@ -26,6 +26,9 @@ body {
   font-family: var(--font-family-sans);
   
 }
+.just-hover:hover {
+  cursor: pointer;
+}
 * {
   margin: 0;
   padding: 0;
@@ -160,6 +163,14 @@ main {
   color: var(--color-very-light-gray);
 
 }
+
+/* #goto-portfolio-a {
+  color: #203a4c;
+  text-decoration: none
+} */
+/* #goto-portfolio-a:hover {
+    color: var(--color-very-light-gray);
+} */
 .homepage-section4 {
   margin-top: 70px;
   display: flex;
@@ -336,6 +347,19 @@ label {
   font-weight: 600;
 }
 #submit-btn:hover{
+  background-color: var(--color-very-light-gray);
+  color: var(--color-grayish-dark-blue);
+  border: 1px solid var(--color-grayish-dark-blue);
+}
+.view-project {
+  background-color: var(--color-grayish-dark-blue);
+  color: var(--color-very-light-gray);
+  padding: 18px 30px;
+  outline: none;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+.view-project:hover{
   background-color: var(--color-very-light-gray);
   color: var(--color-grayish-dark-blue);
   border: 1px solid var(--color-grayish-dark-blue);

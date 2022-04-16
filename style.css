@@ -44,8 +44,44 @@ nav {
 ul li {
   list-style-type: none;
 }
+.my-icon {
+  display: inline-block;
+}
 #toggle-nav {
   display: none;
+
+}
+.mobile-nav {
+  display: none;
+  background-color: var(--color-very-light-gray);
+  transition: all 2.0s ease-in;
+}
+.mobile-nav li {
+  padding: 15px 5px;
+  border-top: 1px solid var(--color-border-gray);
+  transition: all .75s ease-in;
+
+}
+.mobile-nav li a {
+  text-decoration: none;
+  color: var(--color-grayish-dark-blue);
+  font-size: 1.2rem;
+
+  
+}
+.mobile-nav li:hover {
+  background-color: var(--color-cyan) ;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: display 2.0s ease-in;
+
+
 }
 #toggle-nav li a{
   color: var(--color-grayish-dark-blue);
@@ -68,6 +104,7 @@ ul li {
 main {
   width: 90%;
   margin: 0 auto;
+  position: relative;
 
 }
 .homepage-section1 img{
@@ -257,14 +294,14 @@ footer .list2 li:hover {
 .project-image1 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://lh3.googleusercontent.com/6-USU6mxC6Gy2o9BTIA9IwGAkuCfXki6cvB-jmqA10pBN5Y3k5jsgtB8Y7i9xykWt4KMB4cipCNa8R7c06ceUeKfGAG8peGAODbR7-kZkI7Bs_sqvJ6Zc_5jAsS3aKtD2nXgxDViaEJi0OhD5WjcNOjNQ4rVBR5cjcwWy9DasEAq0XsLFZnVcR0jNsSDzUtp3X4PN72wXcwK4dMleYBLSPzRmsb9TJGZfYWONdm1XpXQ3v1b1aUVuhAE_t7uEvcJJ-RlhMaCzxh3LpSM1axeQ2VZ5hQSGZU6jFaG78MclVRKZqt6v2Es88v4aSlaHsJBKzN7YG80JmmkiKFxfNIKAHQPXSmjLeUcLQza3fInYIXTK7DmFB2w65pCCR8BfkKRMGHIdAyTeBCjTUJYPPXR-lEFINACkzklWi29p24Z5vJlEx6ZICzcxhLeOlIw3URuSRG1VHt6_BX2QbH82MfU8prrzlOSpXQFBmERBcfulUKvqI3_m3a0A-aRSfSJGmqTTcvbAePQo7uQDlOEwceEFjFoRVK-IDqv3wpI9CRilIPJxuChFv53dGf_f0QoYAvQWAjWk8rdX3gHq-A4l-LbRdJfaKVg2i3l8Tj0JmAWeuMX8ZdAWFio-iCx8Ci4u_0vGle_UuXYWgpuN8l975fHuVMkRwgYBZwaB18jgg2YNFBOWaAB9kT9JZMnj5kz0HeL_17mjlc-2EQ8lm8K_WkIkiqw5CW0VHE3GB6PImobQ6fdFua7qJw1oQ1wOKAsmV4=w877-h643-no?authuser=0");
+  background-image: url(./project/desktop-preview.jpg);
   background-repeat: no-repeat;
   background-size: auto;
 }
 .project-image2 {
   width: 100%;
   height: 18.3em;
-  background-image: url("./project1/desktop-preview.jpg");
+  background-image: url(./project/desktop-preview.jpg);
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -408,7 +445,11 @@ aside span {
 
 
 @media only screen and (min-width: 768px) {
-  .bar {
+  .my-icon {
+    display: none;
+  }
+
+  .show, #mobile-nav {
     display: none;
   }
   #toggle-nav {
@@ -427,11 +468,11 @@ aside span {
   }
 
   .project-image1 {
-    background-image: url("https://lh3.googleusercontent.com/6-USU6mxC6Gy2o9BTIA9IwGAkuCfXki6cvB-jmqA10pBN5Y3k5jsgtB8Y7i9xykWt4KMB4cipCNa8R7c06ceUeKfGAG8peGAODbR7-kZkI7Bs_sqvJ6Zc_5jAsS3aKtD2nXgxDViaEJi0OhD5WjcNOjNQ4rVBR5cjcwWy9DasEAq0XsLFZnVcR0jNsSDzUtp3X4PN72wXcwK4dMleYBLSPzRmsb9TJGZfYWONdm1XpXQ3v1b1aUVuhAE_t7uEvcJJ-RlhMaCzxh3LpSM1axeQ2VZ5hQSGZU6jFaG78MclVRKZqt6v2Es88v4aSlaHsJBKzN7YG80JmmkiKFxfNIKAHQPXSmjLeUcLQza3fInYIXTK7DmFB2w65pCCR8BfkKRMGHIdAyTeBCjTUJYPPXR-lEFINACkzklWi29p24Z5vJlEx6ZICzcxhLeOlIw3URuSRG1VHt6_BX2QbH82MfU8prrzlOSpXQFBmERBcfulUKvqI3_m3a0A-aRSfSJGmqTTcvbAePQo7uQDlOEwceEFjFoRVK-IDqv3wpI9CRilIPJxuChFv53dGf_f0QoYAvQWAjWk8rdX3gHq-A4l-LbRdJfaKVg2i3l8Tj0JmAWeuMX8ZdAWFio-iCx8Ci4u_0vGle_UuXYWgpuN8l975fHuVMkRwgYBZwaB18jgg2YNFBOWaAB9kT9JZMnj5kz0HeL_17mjlc-2EQ8lm8K_WkIkiqw5CW0VHE3GB6PImobQ6fdFua7qJw1oQ1wOKAsmV4=w877-h643-no?authuser=0");
+    background-image: url(./project/desktop-preview.jpg);
     background-size: cover;
   }
   .project-image2 {
-    background-image: url("https://lh3.googleusercontent.com/fpQ83pW6bo9KfkhDfLXWeDdZIrnxgTHWVi99sbJnHyoyLT2Et0pjHjTG9gB4fq3RLVGGd1PrT_Xt8WhMGCG3LhaPZE9COhy0t0mBdygwt5Yo52m0GnW5093MxRi8qAHcxBdbjPp8klhAjXbUVIOa3SLVYl_mZ4cTozraczxBvsaAHRpNLzVK9ODoHreYLShpoXiVBgTlYBkfJ-O4AxJNUf6r-uSqfFyUIFFp9t6WLgTZJILKV0te4fCoERGgoq28Qh30WcTnROsMidhHyKbEwoxcoELx0HWLBcO_MvVfO6Dwr4JO75kaP1prMYvzkoU7M6u5n-M-cpDJDm16lxr9b9tcldWEXbJlmADVw57FynuZm1r8VJXoNkUE8vN1ZsQCYjD8RqmZg95mkzHZqZV9qldTbkd5vsKvl1Qu-X4JEzllfBQd2TtwjKF9QtOfqz_z80fUrSG2sg6ezKE63raMVAeQebNDF2kA0fP6mZS3_8_8ckSmeOLkYUXRvYX6F2xZltJfWjX8kMglRdaN9cgrSWLB_cMEZOsWbGM7dcO-DPzl-nNk725CryM4zhuUDXtiupmS3ZDVy_UDmIWjVB1CBRfpTYHx04mOUWrWmHnU312ppRGFKqtnZvoZ9sxVlCeOe3RoBkQ_XkYV352bGDOHjkwXsPgtyjHaNVw7i-O-PiQFLnTABSXkWbNjbhzwOS1VBfoXPX6MoGppNc0wwgVUOzmJ_e5bJi6r43YpNX8FGZ34wEBTLnxF-PXowQri-Xg=w877-h643-no?authuser=0");
+    background-image: url(./project/desktop-preview.jpg);
     background-size: cover;
   }
   .project-image3 {

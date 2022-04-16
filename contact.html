@@ -10,7 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&family=Public+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4c49d19b72.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css">
+    <script src="./script/script.js" defer></script>
+
 </head>
 <body>
     <!-- Header with my NAVBAR -->
@@ -20,8 +26,12 @@
             <ul>
                 <li onclick="window.location.href='./'"><span class="nav-icon" id="logo-icon"><i class="fa-solid fa-shapes"></i></span></li>
             </ul>
-            <span class="nav-icon bar"><i class="fa-solid fa-bars bar"></i></span>
-            <ul id="toggle-nav">
+            <span class="my-icon animate__animated animate__rotateIn">
+                <span class="nav-icon bar1"><i class="fa-solid fa-bars bar"></i></span>
+                <span class="nav-icon bar2"  hidden><i class="fa-solid fa-xmark"></i></span>
+
+            </span>
+             <ul id="toggle-nav">
                 <li><a href="./">Home</a></li>
                 <li><a href="./portfolio.html">Portfolio</a></li>
                 <li><a target="_blank" href="https://drive.google.com/file/d/1v6n_xD9XX3xm4bgNNwxTUVEzH6GDpk3K/view?usp=sharing">Resume</a></li>
@@ -31,6 +41,12 @@
     </header>
     <!-- The main section -->
     <main>
+        <ul class="mobile-nav animate__animated ">
+            <li><a href="./">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a target="_blank" href="https://drive.google.com/file/d/1v6n_xD9XX3xm4bgNNwxTUVEzH6GDpk3K/view?usp=sharing">Resume</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+        </ul>
         <section class="contact-section1">
             <div class="contact-section1-part1">
                 <h2>

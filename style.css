@@ -24,7 +24,6 @@ html {
 body {
   background-color: var(--color-very-light-gray);
   font-family: var(--font-family-sans);
-  
 }
 .just-hover:hover {
   cursor: pointer;
@@ -49,49 +48,47 @@ ul li {
 }
 #toggle-nav {
   display: none;
-
 }
 .mobile-nav {
   display: none;
   background-color: var(--color-very-light-gray);
-  transition: all 2.0s ease-in;
+  transition: all 2s ease-in;
 }
 .mobile-nav li {
-  padding: 15px 5px;
-  border-top: 1px solid var(--color-border-gray);
-  transition: all .75s ease-in;
-
+  transition: all 0.5s ease-in;
 }
+
 .mobile-nav li a {
+  border-top: 1px solid var(--color-border-gray);
+
   text-decoration: none;
+  padding: 15px 5px;
   color: var(--color-grayish-dark-blue);
   font-size: 1.2rem;
-
-  
+  display: block;
 }
 .mobile-nav li:hover {
-  background-color: var(--color-cyan) ;
+  background-color: var(--color-cyan);
+}
+#hey {
+  border: 2px solid red;
 }
 
 .show {
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: absolute;
   width: 100%;
   text-align: center;
-  transition: display 2.0s ease-in;
-
-
+  transition: display 2s ease-in;
 }
-#toggle-nav li a{
+#toggle-nav li a {
   color: var(--color-grayish-dark-blue);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: var(--weight-semiBold);
 }
 #toggle-nav li a:hover {
-  color:var(--color-cyan);
-
+  color: var(--color-cyan);
 }
 .nav-icon {
   font-size: 1.4em;
@@ -105,22 +102,19 @@ main {
   width: 90%;
   margin: 0 auto;
   position: relative;
-
 }
-.homepage-section1 img{
+.homepage-section1 img {
   width: 100%;
   background-image: url("https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/homepage/mobile/image-homepage-hero@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 .mobile-desktop {
-  display:none
+  display: none;
 }
 .mobile-desktop button:hover {
   background: var(--color-cyan);
   transition: var(--transition);
-  
 }
 .mobile h1 {
   padding: 20px 0;
@@ -148,7 +142,6 @@ main {
   /* height: 100%; */
 }
 .about-me-text {
-
   padding: 20px 20px;
 }
 .homepage-section2 {
@@ -159,17 +152,15 @@ main {
 
   margin-top: 50px;
   margin-bottom: 30px;
-
 }
 .homepage-section2 img {
   width: 100%;
 
   object-fit: cover;
-  overflow:hidden;
+  overflow: hidden;
   background-image: url("/dami-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .homepage-section3 {
@@ -198,7 +189,6 @@ main {
 .goto-portfolio:hover {
   background-color: var(--color-dark-blue);
   color: var(--color-very-light-gray);
-
 }
 
 /* #goto-portfolio-a {
@@ -220,7 +210,6 @@ main {
   font-size: 3em;
   padding: 20px 0;
   font-family: var(--font-family-serif);
-
 }
 /* .homepage-section4 button {
   border: 2px solid red;
@@ -239,14 +228,10 @@ main {
   padding: 20px 10px;
   width: 50%;
   margin: 0 auto;
-
-
-
 }
 .homepage-section4 button:hover {
   background-color: var(--color-dark-blue);
   color: var(--color-very-light-gray);
-
 }
 footer {
   background-color: var(--color-grayish-dark-blue);
@@ -272,7 +257,6 @@ footer .list1 li a {
   text-decoration: none;
   font-weight: 600;
   transition: var(--transition);
-
 }
 footer .list1 li a:hover {
   color: var(--color-cyan);
@@ -328,22 +312,16 @@ footer .list2 li:hover {
   margin-bottom: 50px;
 }
 .contact-section1 {
-
   display: flex;
   flex-direction: column;
-
-
 }
 .contact-section1 div {
-
 }
 .contact-section1 div h2 {
   padding: 20px 0;
 }
 .get-in-touch {
-
   padding: 10px 0;
-
 }
 .get-in-touch li {
   display: inline;
@@ -352,8 +330,9 @@ footer .list2 li:hover {
   margin-right: 10px;
 }
 
-#name, #email-address, #message {
-
+#name,
+#email-address,
+#message {
   display: block;
   width: 100%;
   padding: 1.2em 0.6em;
@@ -361,18 +340,19 @@ footer .list2 li:hover {
   height: 1.9em;
   outline: none;
   border: 1px solid transparent;
-  margin:7px 0 15px 0;
+  margin: 7px 0 15px 0;
 }
 #message {
   resize: none;
   height: 100px;
   margin-bottom: 23px;
-
 }
 label {
   font-weight: 600;
 }
- #message:focus, #name:focus, #email-address:focus {
+#message:focus,
+#name:focus,
+#email-address:focus {
   border-color: green;
 }
 #submit-btn {
@@ -383,7 +363,7 @@ label {
   border: 1px solid transparent;
   font-weight: 600;
 }
-#submit-btn:hover{
+#submit-btn:hover {
   background-color: var(--color-very-light-gray);
   color: var(--color-grayish-dark-blue);
   border: 1px solid var(--color-grayish-dark-blue);
@@ -396,7 +376,7 @@ label {
   border: 1px solid transparent;
   font-weight: 600;
 }
-.view-project:hover{
+.view-project:hover {
   background-color: var(--color-very-light-gray);
   color: var(--color-grayish-dark-blue);
   border: 1px solid var(--color-grayish-dark-blue);
@@ -405,33 +385,27 @@ label {
   padding-bottom: 80px;
 }
 aside {
-
   margin-top: 30px;
 }
 aside h2 {
   text-align: center;
-  
 }
 aside .skills {
-
-  
   text-align: center;
   font-size: 3.2em;
-
 }
 aside span {
-
-  margin: 20px
+  margin: 20px;
 }
 #html {
-  color: #e34c26 ;
+  color: #e34c26;
 }
 #css {
   color: #264de4;
 }
 #javascript {
-  color: #f0db4f ;
-  background: #323330 ;
+  color: #f0db4f;
+  background: #323330;
 }
 #sass {
   color: #c69;
@@ -440,16 +414,16 @@ aside span {
   color: #61dbfb;
 }
 #bootstrap {
-  color: #563d7c ;
+  color: #563d7c;
 }
-
 
 @media only screen and (min-width: 768px) {
   .my-icon {
     display: none;
   }
 
-  .show, #mobile-nav {
+  .show,
+  #mobile-nav {
     display: none;
   }
   #toggle-nav {
@@ -459,7 +433,6 @@ aside span {
   }
   #toggle-nav li {
     margin: 0 20px;
- 
   }
   .project {
     flex-direction: row;
@@ -508,26 +481,24 @@ aside span {
   }
   .homepage-section1 {
     position: relative;
-
   }
-  .homepage-section1  img {
+  .homepage-section1 img {
     width: 100%;
     height: 100vh;
-    -o-object-fit:cover ;
-       object-fit:cover ;
+    -o-object-fit: cover;
+    object-fit: cover;
     background-image: url("https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/homepage/mobile/image-homepage-hero@2x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
   }
   .mobile-desktop {
-    display:block;
+    display: block;
     position: absolute;
     background: var(--color-light-gray);
     bottom: 0%;
     width: 48%;
     left: 0;
-    font-family: var(--font-family-serif)
+    font-family: var(--font-family-serif);
   }
   .mobile-desktop h1 {
     padding: 20px 0;
@@ -551,11 +522,11 @@ aside span {
   article {
     margin-top: 50px;
     display: flex;
-  
+
     flex-direction: center;
-   
+
     width: 100%;
-  } 
+  }
   .homepage-section2 {
     height: 100vh;
     width: 400vh;
@@ -571,7 +542,7 @@ aside span {
   }
   .about-center {
     width: 60%;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
   }
   .about-center p {
@@ -583,7 +554,7 @@ aside span {
     color: blue;
     position: absolute;
     top: 0;
-    background:rgb(27, 24, 24)
+    background: rgb(27, 24, 24);
   }
   #about-bottom {
     height: 1px;
@@ -591,11 +562,11 @@ aside span {
     color: blue;
     position: absolute;
     bottom: 0;
-    background:rgb(27, 24, 24)
+    background: rgb(27, 24, 24);
   }
-  .homepage-section3 h2{
+  .homepage-section3 h2 {
     padding-top: 60px;
-    font-size: 3.0em;
+    font-size: 3em;
     font-family: var(--font-family-serif);
   }
   .goto-portfolio {
@@ -613,13 +584,12 @@ aside span {
     width: 350px;
     font-size: 2.6em;
   }
-  
+
   .homepage-section4 button {
     border: 2px solid var(--color-cyan);
     margin: 0;
     padding: 20px 10px;
     width: 25%;
-
   }
   /* aside {
 
@@ -628,12 +598,11 @@ aside span {
     text-align: center;
   }
   aside .skills {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     padding: 0 80px;
     font-size: 3.8em;
   }
-
 }
 @media only screen and (min-width: 1020px) {
   .contact-section1 {
@@ -654,18 +623,16 @@ aside span {
     line-height: 1.9;
   }
   .contact-section1 div h2 {
-    padding: 0; 
+    padding: 0;
   }
   .contact-section2 {
     display: flex;
     flex-direction: row;
     width: 100%;
     padding-top: 60px;
-  
   }
   .contact1 {
     width: 45%;
- 
   }
   .contact2 {
     width: 100%;

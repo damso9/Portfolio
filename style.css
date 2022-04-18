@@ -267,7 +267,10 @@ footer .list2 li {
   font-size: 2em;
   cursor: pointer;
 }
-footer .list2 li:hover {
+footer .list2 li a {
+  color: var(--color-light-gray);
+}
+footer .list2 li a:hover {
   color: var(--color-cyan);
 }
 .project {

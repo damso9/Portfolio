@@ -283,23 +283,22 @@ footer .list2 li a:hover {
 .project-image1 {
   width: 100%;
   height: 18.3em;
-  background-image: url(./project/desktop-preview.jpg);
+  background-image: url('https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 .project-image2 {
   width: 100%;
   height: 18.3em;
-  background-image: url(./project/desktop-preview.jpg);
+  background-image: url('https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png');
   background-repeat: no-repeat;
-  background-size: auto;
-}
+  background-size: cover}
 .project-image3 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/portfolio/tablet/image-portfolio-manage@2x.jpg");
+  background-image: url("https://github.com/damso9/interactive-ratings-component/raw/master/design/desktop-preview.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 .project-info {
   margin: 40px 0;
@@ -311,11 +310,31 @@ footer .list2 li a:hover {
 .project-info p {
   line-height: 1.8;
 }
+.project-info aside {
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+  flex-direction: row;
+
+}
+.project-info span {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  align-items: center;
+
+}
+.project-info .code-links {
+  font-size: 2.4em;
+}
+
 .project-info button {
   padding: 20px 40px;
-  margin: 20px 0;
-  margin-bottom: 50px;
+  /* margin: 20px 0; */
+  /* margin-bottom: 50px; */
+  /* border: 2px solid red; */
 }
+
 .contact-section1 {
   display: flex;
   flex-direction: column;
@@ -445,15 +464,15 @@ aside span {
   }
 
   .project-image1 {
-    background-image: url(./project/desktop-preview.jpg);
+    background-image: url('https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg');
     background-size: cover;
   }
   .project-image2 {
-    background-image: url(./project/desktop-preview.jpg);
+    background-image: url('https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png');
     background-size: cover;
   }
   .project-image3 {
-    background-image: url("https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/portfolio/desktop/image-portfolio-manage@2x.jpg");
+    background-image: url("https://github.com/damso9/interactive-ratings-component/raw/master/design/desktop-preview.jpg");
     background-size: cover;
   }
   .project-info {

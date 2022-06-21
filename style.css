@@ -163,7 +163,6 @@ main {
   background-size: cover;
 }
 
-
 .homepage-section3 h2 {
   color: var(--color-grayish-dark-blue);
   margin: 30px 0;
@@ -270,7 +269,7 @@ footer .list2 li a {
   color: var(--color-light-gray);
 }
 .get-in-touch li span a {
-  color: var(--color-grayish-dark-blue)
+  color: var(--color-grayish-dark-blue);
 }
 footer .list2 li a:hover {
   color: var(--color-cyan);
@@ -283,20 +282,28 @@ footer .list2 li a:hover {
 .project-image1 {
   width: 100%;
   height: 18.3em;
-  background-image: url('https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg');
+  background-image: url("https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .project-image2 {
   width: 100%;
   height: 18.3em;
-  background-image: url('https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png');
+  background-image: url("https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png");
   background-repeat: no-repeat;
-  background-size: cover}
+  background-size: cover;
+}
 .project-image3 {
   width: 100%;
   height: 18.3em;
   background-image: url("https://github.com/damso9/interactive-ratings-component/raw/master/design/desktop-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-image4 {
+  width: 100%;
+  height: 18.3em;
+  background-image: url("https://video.udacity-data.com/topher/2021/August/611ac8c6_scroll-to-section/scroll-to-section.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -315,14 +322,12 @@ footer .list2 li a:hover {
   /* border: 2px solid red; */
   align-items: center;
   flex-direction: row;
-
 }
 .project-info span {
   display: flex;
   flex-direction: column;
   /* border: 2px solid red; */
   align-items: center;
-
 }
 .project-info .code-links {
   font-size: 2.4em;
@@ -464,11 +469,11 @@ aside span {
   }
 
   .project-image1 {
-    background-image: url('https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg');
+    background-image: url("https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg");
     background-size: cover;
   }
   .project-image2 {
-    background-image: url('https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png');
+    background-image: url("https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png");
     background-size: cover;
   }
   .project-image3 {

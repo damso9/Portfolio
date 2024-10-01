@@ -1,55 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Projects</title>
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&family=Public+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4c49d19b72.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/>
+        href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&family=Public+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c49d19b72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
     <script src="./script/script.js" defer></script>
 
 </head>
+
 <body>
     <!-- Header with my NAVBAR -->
     <header>
         <nav>
             <ul>
-                <li onclick="window.location.href='/index.html'"><span class="nav-icon" id="logo-icon"><i class="fa-solid fa-shapes"></i></span></li>
+                <li onclick="window.location.href='/index.html'"><span class="nav-icon" id="logo-icon"><i
+                            class="fa-solid fa-shapes"></i></span></li>
             </ul>
             <span class="my-icon animate__animated animate__rotateIn">
                 <span class="nav-icon bar1"><i class="fa-solid fa-bars bar"></i></span>
-                <span class="nav-icon bar2"  hidden><i class="fa-solid fa-xmark"></i></span>
+                <span class="nav-icon bar2" hidden><i class="fa-solid fa-xmark"></i></span>
 
             </span>
             <ul id="toggle-nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a target="_blank" href="https://drive.google.com/file/d/1v6n_xD9XX3xm4bgNNwxTUVEzH6GDpk3K/view?usp=sharing">Resume</a></li>
+                <li><a href="./portfolio.html">Projects</a></li>
+                <li><a target="_blank"
+                        href="https://drive.google.com/file/d/1dQ6Rt5XsIPkQlBTjipCc0P-HsxYtvycw/view?usp=sharing">Resume</a>
+                </li>
                 <li><a href="./contact.html">Contact Me</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
         <ul class="mobile-nav animate__animated ">
             <li><a href="./">Home</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a target="_blank" href="https://drive.google.com/file/d/1v6n_xD9XX3xm4bgNNwxTUVEzH6GDpk3K/view?usp=sharing">Resume</a></li>
+            <li><a target="_blank"
+                    href="https://drive.google.com/file/d/1v6n_xD9XX3xm4bgNNwxTUVEzH6GDpk3K/view?usp=sharing">Resume</a>
+            </li>
             <li><a href="./contact.html">Contact Me</a></li>
         </ul>
+
+              <div class="project project-reverse">
+            <div class="project-image11">
+
+            </div>
+            <div class="project-info">
+                <hr>
+                <h2>SIMONE</h2>
+                <p>I built and actively maintain Dukka's centralised ERP software which improved operational
+management and tracking efficiency of merchant dashboards, KYC information,
+terminal distribution, wallet system and payment reconciliations by 50%</p>
+                <p style="font-weight: 700;">Technologies - TypeScript, React, Material UI, Axios, Redux, React Query,Formik, DayJs, Figma</p>
+
+                <aside>
+
+
+                    <span>
+                        <a target="_blank" href="https://simone.dukka.com/login">
+                            <button class='view-project'>
+                                View Project
+                            </button>
+                        </a>
+                    </span>
+                    <!-- <span><a target="_blank" href="https://github.com/damso9/Cocktails" target="_blank"><i
+                                class="fa-brands fa-github code-links"></i></a>
+                        <p>Code</p>
+                    </span> -->
+                </aside>
+                <hr>
+            </div>
+
+        </div>
+        <div class="project">
+            <div class="project-image9">
+
+            </div>
+            <div class="project-info">
+                <hr>
+                <h2>
+                    Dukka's Terminal Request Dashboard(TRD)
+                </h2>
+
+                <p>TRD is a platform dedicated to facilitate the Shipment of Dukka's POS terminal, right from request
+                    down to delivery, creating a seamless experience for tracking with increased efficiency.
+                </p>
+                <p style="font-weight: 700;">Technologies - JavaScript, React, Material UI, Axios, Redux, DayJs, Figma</p>
+
+                <aside>
+
+
+                    <span>
+                        <a target="_blank" href="https://trd.dukka.com/">
+                            <button class='view-project'>
+                                View Project
+                            </button>
+                        </a>
+                    </span>
+                    <!-- <span><a target="_blank" href="https://github.com/damso9/stock-photos" target="_blank"><i
+                                class="fa-brands fa-github code-links"></i></a>
+                        <p>Code</p>
+                    </span> -->
+                </aside>
+                <hr>
+            </div>
+        </div>
+
+        </div>
+        <div class="project project-reverse">
+            <div class="project-image10">
+
+            </div>
+            <div class="project-info">
+                <hr>
+                <h2>Community By Dukka</h2>
+                <p>I spearheaded the development of the CommunityByDukka website, a platform designed to support Dukka’s
+                    merchant community by providing a seamless and user-friendly experience for entrepreneurs and
+                    freelancers to access coworking space services. My responsibilities included building responsive
+                    user interfaces,  and optimizing the site
+                    for performance and accessibility. I collaborated closely with designers to ensure a cohesive and
+                    visually appealing layout, enhancing the overall user experience for merchants looking to grow their
+                    businesses or get a coworking solution through CommunityByDukka. </p>
+                <p style="font-weight: 700;">Technologies - React, SCSS, React-router, Material UI</p>
+
+                <aside>
+
+
+                    <span>
+                        <a target="_blank" href="https://community.dukka.com/">
+                            <button class='view-project'>
+                                View Project
+                            </button>
+                        </a>
+                    </span>
+                    <!-- <span><a target="_blank" href="https://github.com/damso9/Cocktails" target="_blank"><i
+                                class="fa-brands fa-github code-links"></i></a>
+                        <p>Code</p>
+                    </span> -->
+                </aside>
+                <hr>
+            </div>
+        </div>
         <div class="project">
             <div class="project-image7">
 
@@ -58,28 +162,62 @@
                 <hr>
                 <h2>
                     Stock Photos with Unsplash API
-                    </h2>
+                </h2>
 
-                    <p>This project required me to building a React Application with a search functionality which displays different types of images based of the input given.
+                <p>This project required me to building a React Application with a search functionality which displays
+                    different types of images based of the input given.
                     An Infinte scrolling functionaliy was also added.
-                    </p>
-                    <p style="font-weight: 700;">Technologies - React, CSS, Context API, Fetch API, Unsplash</p>
+                </p>
+                <p style="font-weight: 700;">Technologies - React, CSS, Context API, Fetch API, Unsplash</p>
 
-                    <aside>
+                <aside>
 
 
-                        <span>
-                            <a target="_blank" href="https://dammie-stock-photos.netlify.app/">
-                                <button class='view-project'>
-                                    View Project
-                                </button>
-                            </a>
-                        </span>
-                        <span><a target="_blank" href="https://github.com/damso9/stock-photos" target="_blank"><i class="fa-brands fa-github code-links"></i></a>
-                            <p>Code</p>
-                        </span>     
-                    </aside>
-                    <hr>
+                    <span>
+                        <a target="_blank" href="https://dammie-stock-photos.netlify.app/">
+                            <button class='view-project'>
+                                View Project
+                            </button>
+                        </a>
+                    </span>
+                    <span><a target="_blank" href="https://github.com/damso9/stock-photos" target="_blank"><i
+                                class="fa-brands fa-github code-links"></i></a>
+                        <p>Code</p>
+                    </span>
+                </aside>
+                <hr>
+            </div>
+        </div>
+          <div class="project">
+            <div class="project-image12">
+
+            </div>
+            <div class="project-info">
+                <hr>
+                <h2>
+                    Delete Dukka
+                </h2>
+
+                <p>Delete Dukka Web is a web platform enabling Dukka merchants to seamlessly archive their Dukka accounts from a web platform, improving user experience and account management efficiency.
+                </p>
+                <p style="font-weight: 700;">Technologies - JavaScript, React, Material UI, Axios, Redux, Figma</p>
+
+                <aside>
+
+
+                    <span>
+                        <a target="_blank" href="https://delete.dukka.com/">
+                            <button class='view-project'>
+                                View Project
+                            </button>
+                        </a>
+                    </span>
+                    <!-- <span><a target="_blank" href="https://github.com/damso9/stock-photos" target="_blank"><i
+                                class="fa-brands fa-github code-links"></i></a>
+                        <p>Code</p>
+                    </span> -->
+                </aside>
+                <hr>
             </div>
         </div>
         <div class="project project-reverse">
@@ -89,7 +227,8 @@
             <div class="project-info">
                 <hr>
                 <h2>Cocktail Gallery</h2>
-                <p>A React Application with the functionality of searching for various types of drinks and getting more information about those drinks. This 
+                <p>A React Application with the functionality of searching for various types of drinks and getting more
+                    information about those drinks. This
                     was a great learning curve in learning about react router </p>
                 <p style="font-weight: 700;">Technologies - React, CSS, React-router</p>
 
@@ -103,11 +242,12 @@
                             </button>
                         </a>
                     </span>
-                    <span><a target="_blank" href="https://github.com/damso9/Cocktails" target="_blank"><i class="fa-brands fa-github code-links"></i></a>
+                    <span><a target="_blank" href="https://github.com/damso9/Cocktails" target="_blank"><i
+                                class="fa-brands fa-github code-links"></i></a>
                         <p>Code</p>
-                    </span>     
+                    </span>
                 </aside>
-                    <hr>
+                <hr>
             </div>
         </div>
         <div class="project">
@@ -118,31 +258,31 @@
                 <hr>
                 <h2>
                     Cart Functionality
-                    </h2>
-                <p>This project required me to build a fully responsive interactive single page ratings component to the 
-                    designs provided. I used HTML5, along with CSS 
-                    Grid and JavaScript for the areas that required interactivity, 
-                    such as the testimonial slider.</p>
-                    <p>This project required me to building a React Application that has the capabilty of implementing some Cart Functionality.
-                        Such as calculating Total Item prices and item number. As well as updating and deleting Items properties
-                    </p>
-                    <p style="font-weight: 700;">Technologies - React, CSS, Context API, Fetch API</p>
+                </h2>
+               
+                <p>This project required me to building a React Application that has the capabilty of implementing some
+                    Cart Functionality.
+                    Such as calculating Total Item prices and item number. As well as updating and deleting Items
+                    properties
+                </p>
+                <p style="font-weight: 700;">Technologies - React, CSS, Context API, Fetch API</p>
 
-                    <aside>
+                <aside>
 
 
-                        <span>
-                            <a target="_blank" href="https://incandescent-raindrop-6516dd.netlify.app/">
-                                <button class='view-project'>
-                                    View Project
-                                </button>
-                            </a>
-                        </span>
-                        <span><a target="_blank" href="https://github.com/damso9/cart" target="_blank"><i class="fa-brands fa-github code-links"></i></a>
-                            <p>Code</p>
-                        </span>     
-                    </aside>
-                    <hr>
+                    <span>
+                        <a target="_blank" href="https://incandescent-raindrop-6516dd.netlify.app/">
+                            <button class='view-project'>
+                                View Project
+                            </button>
+                        </a>
+                    </span>
+                    <span><a target="_blank" href="https://github.com/damso9/cart" target="_blank"><i
+                                class="fa-brands fa-github code-links"></i></a>
+                        <p>Code</p>
+                    </span>
+                </aside>
+                <hr>
             </div>
         </div>
         <div class="project project-reverse">
@@ -165,11 +305,12 @@
                             </button>
                         </a>
                     </span>
-                    <span><a target="_blank" href="https://github.com/damso9/grocery-bud" target="_blank"><i class="fa-brands fa-github code-links"></i></a>
+                    <span><a target="_blank" href="https://github.com/damso9/grocery-bud" target="_blank"><i
+                                class="fa-brands fa-github code-links"></i></a>
                         <p>Code</p>
-                    </span>     
+                    </span>
                 </aside>
-                    <hr>
+                <hr>
             </div>
         </div>
         <div class="project">
@@ -179,29 +320,33 @@
             <div class="project-info">
                 <hr>
                 <h2>Intro section with dropdown navigation</h2>
-                <p>This project required me to build a fully responsive  intro section with dropdown navigation with the designs provided. I used HTML5, along with CSS 
-                    Flexbox and JavaScript for the areas that required interactivity, 
+                <p>This project required me to build a fully responsive intro section with dropdown navigation with the
+                    designs provided. I used HTML5, along with CSS
+                    Flexbox and JavaScript for the areas that required interactivity,
                     especially when it came to toggling the navigational links.</p>
-                    <p style="font-weight: 700;">Technologies - HTML, CSS, SASS/SCSS, JavaScript</p>
+                <p style="font-weight: 700;">Technologies - HTML, CSS, SASS/SCSS, JavaScript</p>
 
-                    <aside>
-
-
-                        <span>
-                            <a target="_blank" href="https://damso9.github.io/Intro-section-with-dropdown-navigation-challenge/">
-                                <button class='view-project'>
-                                    View Project
-                                </button>
-                            </a>
-                        </span>
-                        <span><a target="_blank" href="https://github.com/damso9/Intro-section-with-dropdown-navigation-challenge" target="_blank"><i class="fa-brands fa-github code-links"></i></a>
-                            <p>Code</p>
-                        </span>
-                    </aside>
+                <aside>
 
 
+                    <span>
+                        <a target="_blank"
+                            href="https://damso9.github.io/Intro-section-with-dropdown-navigation-challenge/">
+                            <button class='view-project'>
+                                View Project
+                            </button>
+                        </a>
+                    </span>
+                    <span><a target="_blank"
+                            href="https://github.com/damso9/Intro-section-with-dropdown-navigation-challenge"
+                            target="_blank"><i class="fa-brands fa-github code-links"></i></a>
+                        <p>Code</p>
+                    </span>
+                </aside>
 
-                    <hr>
+
+
+                <hr>
             </div>
         </div>
         <div class="project project-reverse">
@@ -224,11 +369,13 @@
                             </button>
                         </a>
                     </span>
-                    <span><a target="_blank" href="https://github.com/damso9/Intro-section-with-dropdown-navigation-challenge" target="_blank"><i class="fa-brands fa-github code-links"></i></a>
+                    <span><a target="_blank"
+                            href="https://github.com/damso9/Intro-section-with-dropdown-navigation-challenge"
+                            target="_blank"><i class="fa-brands fa-github code-links"></i></a>
                         <p>Code</p>
-                    </span>     
+                    </span>
                 </aside>
-                    <hr>
+                <hr>
             </div>
         </div>
         <div class="project">
@@ -239,26 +386,27 @@
                 <hr>
                 <h2>
                     interactive-ratings-component
-                    </h2>
-                <p>This project required me to build a fully responsive interactive single page ratings component to the 
-                    designs provided. I used HTML5, along with CSS 
-                    Grid and JavaScript for the areas that required interactivity, 
+                </h2>
+                <p>This project required me to build a fully responsive interactive single page ratings component to the
+                    designs provided. I used HTML5, along with CSS
+                    Grid and JavaScript for the areas that required interactivity,
                     such as the testimonial slider.</p>
-                    <aside>
+                <aside>
 
 
-                        <span>
-                            <a target="_blank" href="https://damso9.github.io/interactive-ratings-component//">
-                                <button class='view-project'>
-                                    View Project
-                                </button>
-                            </a>
-                        </span>
-                        <span><a target="_blank" href="https://github.com/damso9/interactive-ratings-component" target="_blank"><i class="fa-brands fa-github code-links"></i></a>
-                            <p>Code</p>
-                        </span>     
-                    </aside>
-                    <hr>
+                    <span>
+                        <a target="_blank" href="https://damso9.github.io/interactive-ratings-component//">
+                            <button class='view-project'>
+                                View Project
+                            </button>
+                        </a>
+                    </span>
+                    <span><a target="_blank" href="https://github.com/damso9/interactive-ratings-component"
+                            target="_blank"><i class="fa-brands fa-github code-links"></i></a>
+                        <p>Code</p>
+                    </span>
+                </aside>
+                <hr>
             </div>
         </div>
         <div class="project project-reverse">
@@ -268,7 +416,8 @@
             <div class="project-info">
                 <hr>
                 <h2>Dynamic Landing Page</h2>
-                <p>A single-page Landing Page that dynamically auto-generates and highlights it's navigation bar depending on its body content headers </p>
+                <p>A single-page Landing Page that dynamically auto-generates and highlights it's navigation bar
+                    depending on its body content headers </p>
                 <p style="font-weight: 700;">Technologies - HTML, CSS, JavaScript</p>
 
                 <aside>
@@ -281,11 +430,12 @@
                             </button>
                         </a>
                     </span>
-                    <span><a target="_blank" href="https://github.com/damso9/udacity-landing-page-project" target="_blank"><i class="fa-brands fa-github code-links"></i></a>
+                    <span><a target="_blank" href="https://github.com/damso9/udacity-landing-page-project"
+                            target="_blank"><i class="fa-brands fa-github code-links"></i></a>
                         <p>Code</p>
-                    </span>     
+                    </span>
                 </aside>
-                    <hr>
+                <hr>
             </div>
         </div>
 
@@ -296,24 +446,28 @@
             <button onclick="window.location.href='./contact.html'" class='just-hover'>CONTACT ME</button>
         </section>
     </main>
-        <!-- The FOOTER Section -->
-        <footer>
-            <div class="footer-container">
-                <ul class="list1">
-                    <li><span id="footer-icon"><i class="fa-solid fa-shapes"></i></span></li>
-                    <li><a href="./">HOME</a></li>
-                    <li><a href="./portfolio.html">PORTFOLIO</a></li>
-                    <li><a href="./contact.html">CONTACT ME</a></li>
-                    
+    <!-- The FOOTER Section -->
+    <footer>
+        <div class="footer-container">
+            <ul class="list1">
+                <li><span id="footer-icon"><i class="fa-solid fa-shapes"></i></span></li>
+                <li><a href="./">HOME</a></li>
+                <li><a href="./portfolio.html">PROJECTS</a></li>
+                <li><a href="./contact.html">CONTACT ME</a></li>
+
+            </ul>
+            <div class="connect">
+                <ul class="list2">
+                    <li><span><a href="https://github.com/damso9" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a></span></li>
+                    <li><span><a href="https://twitter.com/trayne_xx" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a></span></li>
+                    <li><span><a href="https://www.linkedin.com/in/damilola-ayodele/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a></span></li>
                 </ul>
-                <div class="connect">
-                    <ul class="list2">
-                        <li><span><a href="https://github.com/damso9" target="_blank"><i class="fa-brands fa-github"></i></a></span></li>
-                        <li><span><a href="https://twitter.com/trayne_xx" target="_blank"><i class="fa-brands fa-twitter"></i></a></span></li>
-                        <li><span><a href="https://www.linkedin.com/in/damilola-ayodele/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span></li>
-                    </ul>
-                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 </body>
+
 </html>

@@ -9,8 +9,8 @@
   --color-border-gray: #dcdcde;
   --color-form-input-bg: #e5e5e6;
   --color-form-input-place-holder: #9d9da3;
-  --font-family-sans: "Public Sans", sans-serif;
-  --font-family-serif: "Ibarra Real Nova", serif;
+  --font-family-sans: 'Public Sans', sans-serif;
+  --font-family-serif: 'Ibarra Real Nova', serif;
   --weight-light: 300;
   --weight-regular: 400;
   --weight-semiBold: 600;
@@ -105,7 +105,7 @@ main {
 }
 .homepage-section1 img {
   width: 100%;
-  background-image: url("https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/homepage/mobile/image-homepage-hero@2x.jpg");
+  background-image: url('https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/homepage/mobile/image-homepage-hero@2x.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -146,7 +146,7 @@ main {
 }
 .homepage-section2 {
   width: 100%;
-  height: 50vh;
+  height: 75vh;
 
   overflow: hidden;
 
@@ -155,10 +155,9 @@ main {
 }
 .homepage-section2 img {
   width: 100%;
-
   object-fit: cover;
   overflow: hidden;
-  background-image: url("/dami-img.jpg");
+  background-image: url('/dami-img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -282,56 +281,87 @@ footer .list2 li a:hover {
 .project-image1 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg");
+  background-image: url('https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .project-image2 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png");
+  background-image: url('https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .project-image3 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://github.com/damso9/interactive-ratings-component/raw/master/design/desktop-preview.jpg");
+  background-image: url('https://github.com/damso9/interactive-ratings-component/raw/master/design/desktop-preview.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .project-image4 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://video.udacity-data.com/topher/2021/August/611ac8c6_scroll-to-section/scroll-to-section.gif");
+  background-image: url('https://video.udacity-data.com/topher/2021/August/611ac8c6_scroll-to-section/scroll-to-section.gif');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .project-image5 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://react-projects.netlify.app/_next/image?url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F52f02201ddea4f78931280d20e4c6587%2F8fe93c7e%2FScreenShot2020-10-03at1.03.09PM.png%3Fts%3D1657480138%26userId%3DusrQMwWEPx18KgLcP%26cs%3D9c677c78dc271417&w=1920&q=75");
+  background-image: url('/images/cartProject.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .project-image6 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://react-projects.netlify.app/_next/image?url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F54f7223e43f5ea184e04f07a74220710%2F37a61d68%2FScreenShot2020-10-03at2.30.24PM.png%3Fts%3D1657480138%26userId%3DusrQMwWEPx18KgLcP%26cs%3D5155d22cac674d16&w=1920&q=75");
+  background-image: url('/images/groceryProject.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .project-image7 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://react-projects.netlify.app/_next/image?url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F19f0ca719c7222f7893eab8c03a928b0%2F07846121%2Freact.png%3Fts%3D1657480138%26userId%3DusrQMwWEPx18KgLcP%26cs%3D03a0b0cce30ceaa3&w=1920&q=75");
+  background-image: url('/images/stockProject.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .project-image8 {
   width: 100%;
   height: 18.3em;
-  background-image: url("https://react-projects.netlify.app/_next/image?url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F8b82e34918f1e8027187e923dd161a71%2Fe5915dda%2FScreenShot2020-10-13at7.21.10PM.png%3Fts%3D1657480138%26userId%3DusrQMwWEPx18KgLcP%26cs%3D6700d1d4c89f85e2&w=1920&q=75");
+  background-image: url('/images/cocktailProject.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-image9 {
+  width: 100%;
+  height: 18.3em;
+  background-image: url('/images/trdProject.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-image10 {
+  width: 100%;
+  /* min-width: 600px; */
+  height: 18.3em;
+  background-image: url('/images/communityByDukkaProject.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-image11 {
+  width: 100%;
+  /* min-width: 600px; */
+  height: 18.3em;
+  background-image: url('/images/simoneProject.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-image12 {
+  width: 100%;
+  /* min-width: 600px; */
+  height: 18.3em;
+  background-image: url('/images/deleteDukkaProject.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -497,32 +527,51 @@ aside span {
   }
 
   .project-image1 {
-    background-image: url("https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg");
+    background-image: url('https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/yoglpvvo0vggjf9ekjey.jpg');
     background-size: cover;
   }
   .project-image2 {
-    background-image: url("https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png");
+    background-image: url('https://video.udacity-data.com/topher/2017/August/59a4a997_screen-shot-2017-08-22-at-8.33.49-pm/screen-shot-2017-08-22-at-8.33.49-pm.png');
     background-size: cover;
   }
   .project-image3 {
-    background-image: url("https://github.com/damso9/interactive-ratings-component/raw/master/design/desktop-preview.jpg");
+    background-image: url('https://github.com/damso9/interactive-ratings-component/raw/master/design/desktop-preview.jpg');
     background-size: cover;
   }
   .project-image5 {
-    background-image: url("https://react-projects.netlify.app/_ipx/w_1920,q_75/https%3A%2F%2Fdl.airtable.com%2F.attachments%2F52f02201ddea4f78931280d20e4c6587%2F8fe93c7e%2FScreenShot2020-10-03at1.03.09PM.png%3Fts%3D1657480138%26userId%3DusrQMwWEPx18KgLcP%26cs%3D9c677c78dc271417?url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F52f02201ddea4f78931280d20e4c6587%2F8fe93c7e%2FScreenShot2020-10-03at1.03.09PM.png%3Fts%3D1657480138%26userId%3DusrQMwWEPx18KgLcP%26cs%3D9c677c78dc271417&w=1920&q=75");
+    background-image: url('/images/cartProject.png');
     background-size: cover;
   }
   .project-image6 {
-    background-image: url("https://react-projects.netlify.app/_next/image?url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F54f7223e43f5ea184e04f07a74220710%2F37a61d68%2FScreenShot2020-10-03at2.30.24PM.png%3Fts%3D1657480138%26userId%3DusrQMwWEPx18KgLcP%26cs%3D5155d22cac674d16&w=1920&q=75");
+    background-image: url('/images/groceryProject.png');
     background-size: cover;
   }
   .project-image7 {
-    background-image: url("https://react-projects.netlify.app/_next/image?url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F19f0ca719c7222f7893eab8c03a928b0%2F07846121%2Freact.png%3Fts%3D1657480138%26userId%3DusrQMwWEPx18KgLcP%26cs%3D03a0b0cce30ceaa3&w=1920&q=75");
+    background-image: url('/images/stockProject.png');
     background-size: cover;
   }
   .project-image8 {
-    background-image: url("https://react-projects.netlify.app/_next/image?url=https%3A%2F%2Fdl.airtable.com%2F.attachments%2F8b82e34918f1e8027187e923dd161a71%2Fe5915dda%2FScreenShot2020-10-13at7.21.10PM.png%3Fts%3D1657480138%26userId%3DusrQMwWEPx18KgLcP%26cs%3D6700d1d4c89f85e2&w=1920&q=75");
+    background-image: url('/images/cocktailProject.png');
     background-size: cover;
+  }
+  .project-image9 {
+    background-image: url('/images//trdProject.png');
+    background-size: cover;
+  }
+  .project-image10 {
+    background-image: url('/images/communityByDukkaProject.png');
+    background-size: cover;
+    min-width: calc(100vw / 2);
+  }
+  .project-image11 {
+    background-image: url('/images/simoneProject.png');
+    background-size: cover;
+    min-width: calc(100vw / 2);
+  }
+   .project-image12 {
+    background-image: url('/images/deleteDukkaProject.png');
+    background-size: cover;
+    min-width: calc(100vw / 2);
   }
 
   .project-info {
@@ -560,7 +609,7 @@ aside span {
     height: 100vh;
     -o-object-fit: cover;
     object-fit: cover;
-    background-image: url("https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/homepage/mobile/image-homepage-hero@2x.jpg");
+    background-image: url('https://zzl-frontendmentor-challenges.vercel.app/premium-minimalist-portfolio-master/images/homepage/mobile/image-homepage-hero@2x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }

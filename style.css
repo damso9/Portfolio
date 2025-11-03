@@ -373,6 +373,22 @@ footer .list2 li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.project-image14 {
+  width: 100%;
+  /* min-width: 600px; */
+  height: 18.3em;
+  background-image: url('/images/pulseProject.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-image15 {
+  width: 100%;
+  /* min-width: 600px; */
+  height: 18.3em;
+  background-image: url('/images/punchkingProject.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .project-info {
   margin: 40px 0;
 }
@@ -583,6 +599,16 @@ aside span {
   }
      .project-image13 {
     background-image: url('/images/comfyStoreProject.png');
+    background-size: cover;
+    min-width: calc(100vw / 2);
+  }
+       .project-image14 {
+    background-image: url('/images/pulseProject.png');
+    background-size: cover;
+    min-width: calc(100vw / 2);
+  }
+       .project-image15 {
+    background-image: url('/images/punchkingProject.png');
     background-size: cover;
     min-width: calc(100vw / 2);
   }
